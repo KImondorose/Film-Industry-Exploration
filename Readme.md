@@ -110,38 +110,52 @@ Based on these findings, the recommendation is to make films that have these qua
 Investing in the scifi/fantasy and superhero franchises seems to be a good idea as we can see a positive trend for these films from 2010 - 2018.<br>
 
 It can also be concluded that benchmarking these five studios (Buena Vista, Universal, Warner Bros, Fox, and Sony) will be an excellent idea for identifying their best practices to emulate them<br>
+***
 
-![example](analysis_images/highest_grossing_studios.png)<br />
+![Highest Grossing Studios](analysis_images/highest_grossing_studios.png)<br />
+![BV's Highest Grossing Films](analysis_images/BV_highest_grossing_films.png)<br />
+![Uni's Highest Grossing Films](analysis_images/Uni_highest_grossing_films.png)<br />
+![WB's Highest Grossing Films](analysis_images/WB_highest_grossing_films.png.png)<br />
+![Fox's Highest Grossing Films](analysis_images/Fox_highest_grossing_films.png.png)<br />
+![Sony's Highest Grossing Films](analysis_images/Somy_highest_grossing_films.png.png)<br /> <br /> <br />
+
+***
+
 
 # Recommendation 2: 
 
-## Which films made the most money?
 
-**Scope & Data Used**
 
-To answer this question, we can look at the tn.movie_budgets database, and narrow down our data set to find all films between 2010 and 2020. 
+**With a large production budget, the sci-fi/fantasy/superhero franchises will make the most money**
+**With a small production budget, the horror movie genre is still guaranteed to give a huge ROI**
 
-**Findings**
+To get to a conclusion, we looked at the tn_movie_budgets dataset and narrowed our analysis to films releases from 2010 to 2019, in line with the analysis done in question one. The key question was whether there was a relationship between the movie's production budget and its gross earnings.<br>
 
-The first thing we should ask ourselves is: is there a relationship between the movie's production budget and the movie's gross earnings? When mapped in Seaborn's relplot, we can easily see this relationship. 
+Using Seaborn replots it was easy to see the relationship<br>
 
-In "Production Budget and Domestic Gross", we can see that as the production budget increases, so does the domestic gross. We can see that most of the movies with budgets less than 100 million dollars, do not make any more than 500 million dollars in domestic gross earnings. Movies that made over 600 million dollars all had production budgets of 200 million dollars or more. Moreover, if we look at the correlation coefficient between production budget and domestic gross, we can see that there is somewhat strong correlation between the 2 variables (0.73).
+>In the `Production Budget and Domestic Gross Plot`, as the production budget increases, so does the domestic gross. Most of the movies with budgets of less than 100 million dollars do not make more tham 500 million dollars. Movies that made more tham 600 million dollars had production budgets of over 200 million. Also, the correlation coeeficient between the production budget and domestic gross is very strong strong (0.73).<br>
+>
+>In the `Production Budget and Worldwide Gross` plot we can see a similar trend. The correlation coefficient between the two variables was very strong (0.8).<br>
 
-In "Production Budget and Worldwide Gross", we can see a similar trend. Our correlation coefficient between these 2 variables was 0.80, which indicates a stronger correlation than with domestic gross. It is interesting to note, that this correlation is not without exception. There were still various films with production budgets between 250 million and 350 million dollars with worldwide gross earnings less than 1 billion dollars. 
+>>The conclusion is that there is a very strong relationship between production budget and gross earnings.<br>
 
-We can therefore conclude that there is a strong relationship between production budget and gross earnings, but what about your return on investment? We can also investigate the type of movies that would produce the highest returns. 
+We further investigated the ROI. By calculating the ROI using worldwide gross, we saw that many movies had negative returns. However, there were many movies that made 50x or even 400x their production budget. Looking at the top 20 movies with the highest ROIs, we can see that most of these are horror films.<br>
 
-Calculating the ROI using the worldwide gross, we can see that many movies lost money (indicated by a negative ROI), but there were also many movies that made 50x or even 400x on their production budget. When we look at the top 20 movies with the highest ROIs, we can see right away that most of them are horror films. 
+**RECOMMENDATIONS**
 
-**Recommendations**
+Based on these findings, this is the question to ask ourselves:
+* How big is our production budget?
+We can merge our answer with that of question one.<br>
 
-Based on these findings, I would recommend that we should ask ourselves a follow-up question:
+The conclusion is that is we have a lot of money to invest, we can choose a sci-fi/fantasy/superhero franchise film, use a large production budget, and make more gross earnings.<br>
 
-   * *How big is our production budget?*
-    
-If we have a lot to invest, we should take into consideration our findings from question 1, and conclude that we can invest in a sci-fi/fantasy/superhero franchise or a film remake, use a large production budget, and make more gross earnings.
+With a small budget, we can choose a horror film and get a large ROI.<br> 
 
-However, if we do not want to invest so much, we should make a horror film, in order to receive a large ROI. 
+***
+![Relationship Between Production Budget & Domestic Gross](analysis_images/rel_between_pdn_budget_and_domestic_gross.png)<br />
+![Relationship Between Production Budget & Worldwide Gross](analysis_images/pdn_budget_and_worldwide_gross.png)<br />
+![Films With Highest ROIs](analysis_images/films_with_highest_ROIs.png)<br /><br/> <br/>
+***
 
 # Question 3
 
