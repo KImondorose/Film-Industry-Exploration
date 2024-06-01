@@ -1,6 +1,6 @@
 # Welcome to the film industry exploration!
 
-![hello](istockphoto-861198276-612x612.jpg)
+![hello](images/istockphoto-861198276-612x612.jpg)
 ***
 # Navigation
 * [Project Overview](#Project-Overview)
@@ -219,10 +219,12 @@ If I had time to explore further, I would investigate the following:
 # Repository Structure
 ```
 ├── README.md                        <- The top-level README for reviewers of this project
-├── index.ipynb   <- Narrative documentation of analysis in Jupyter notebook
+├── index.ipynb                      <- Narrative documentation of analysis in Jupyter notebook
 ├── movie_analysis_slides.pdf        <- PDF version of project presentation
 ├── movie_notebook.pdf               <- PDF version of Jupyter notebook
 ├── data                             <- Sourced from The Box Office Mojo, The Numbers, and IMDB
-└── analysis_images                           <- Both sourced externally and generated from code
+├── .gitignore                       <- Large IMDB database file ignored 
+├── images                           <- Images used in the code
+└── analysis_images                  <- Images sourced from the code
 ```
 ***
