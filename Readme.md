@@ -1,9 +1,8 @@
 # Welcome to the film industry exploration!
 
-![hello](8CPR.mp4)
-
+![hello](istockphoto-861198276-612x612.jpg)
+***
 # Navigation
-
 * [Project Overview](#Project-Overview)
 * [Business Problem](#Business-Problem)
 * [Business Problem/Understanding](#Business-Problem/Understanding)
@@ -14,12 +13,13 @@
 * [Recommendation 3](#Recommendation-3)
 * [Conclusion](#Conclusion)
 * [Future Work](#Future-Work)
-
+* [Repository Structure](#Repository-Structure)
+***
 # Important Links
 
 * [Slideshow Presentation](https://github.com/tiaplagata/dsc-phase-1-project-online/blob/master/Microsoft_Movie_Studios.pdf)
 * [Jupyter Notebook with Cleaning & Questions](https://github.com/KImondorose/dsc-phase-1-project/blob/main/index.ipynb)
-
+***
 # Project Overview
 
 The task at hand is to assist Microsoft in their new venture of creating a movie studio and identify the types of films that are doing well at the Box Office.<br>
@@ -31,7 +31,8 @@ My analysis of the movie industry which was done by gathering data from IMDB, Th
 * **Release Month:** Based on the analysis, the four months with the highest earnings based on domestic and worldwide returns are July, November, August, and February. Microsoft should focus on releasing movies during these months.<br>
 
 Microsoft can use this report to target their production budget, genre, and release time to generate the highest amount of revenue possible.<br>
-
+***
+***
 # Business Problem/Understanding
 
 > Microsoft sees the allure of the film business and feels that they also need to get into the market. The decision involves the creation of a new movie studio. However, there is a limitation surrounding information with little awareness of what to do, how to enter the market, what movies to make, when to make them, which studios to emulate, how much money to invest, and a lot of other crucial matters that need understanding before any other steps can be taken.<br>
@@ -55,9 +56,8 @@ Data Questions:
 3. When should the films be released? Which release months make the most money?<br>
 
 4. Which movie genres receive the highest ratings?
-
 ***
-
+***
 # Data Understanding
 I used three different data sources for my analysis to have a comprehensive view of the industry:<br>
 
@@ -70,13 +70,11 @@ I used three different data sources for my analysis to have a comprehensive view
 # Methods/Data Analysis
 After opening the raw datasets with pandas, we cleaned and prepared the data by converting some string data types to float, removing the rows of null values that prevented us from doing transformations, separating rows where a column has many values together, and merging datasets through key columns. Data was further cleaned by obtaining relevant subsets for the analysis performed.
 
-Descriptive analysis was used through the use of bar graphs, scatter plots, and aggregate functions. Since the business problem is to identify the type of movie to make based on past data, we opted to identify trends using graphs.
-
-
-
+Descriptive analysis was used through the use of bar graphs, scatter plots, and aggregate functions. Since the business problem is to identify the type of movie to make based on past data, we opted to identify trends using graphs.<br>
+***
 # Recommendation 1:
 
-**The movie genre should be animated, superhero, scifi, or fantasy**
+#### **The movie genre should be animated, superhero, scifi, or fantasy**
 
 
 To conclude, we looked at the bom_movie_gross dataset from Box Office Mojo. The top-grossing films were defined as those with the highest gross earnings.<br>
@@ -112,20 +110,18 @@ Investing in the scifi/fantasy and superhero franchises seems to be a good idea 
 It can also be concluded that benchmarking these five studios (Buena Vista, Universal, Warner Bros, Fox, and Sony) will be an excellent idea for identifying their best practices to emulate them<br>
 ***
 
-![Highest Grossing Studios](analysis_images/highest_grossing_studios.png)<br />
-![BV's Highest Grossing Films](analysis_images/BV_highest_grossing_films.png)<br />
-![Uni's Highest Grossing Films](analysis_images/Uni_highest_grossing_films.png)<br />
-![WB's Highest Grossing Films](analysis_images/WB_highest_grossing_films.png)<br />
-![Fox's Highest Grossing Films](analysis_images/Fox_highest_grossing_films.png)<br />
+![Highest Grossing Studios](analysis_images/highest_grossing_studios.png)<br /> <br />
+![BV's Highest Grossing Films](analysis_images/BV_highest_grossing_films.png)<br /> <br />
+![Uni's Highest Grossing Films](analysis_images/Uni_highest_grossing_films.png)<br /> <br />
+![WB's Highest Grossing Films](analysis_images/WB_highest_grossing_films.png)<br /> <br />
+![Fox's Highest Grossing Films](analysis_images/Fox_highest_grossing_films.png)<br /> <br />
 ![Sony's Highest Grossing Films](analysis_images/Somy_highest_grossing_films.png)<br /> <br /> <br />
-
 ***
-
-
+***
 # Recommendation 2: 
 
-**With a large production budget, the sci-fi/fantasy/superhero franchises will make the most money**
-**With a small production budget, the horror movie genre is still guaranteed to give a huge ROI**
+#### **With a large production budget, the sci-fi/fantasy/superhero franchises will make the most money**
+#### **With a small production budget, the horror movie genre is still guaranteed to give a huge ROI**
 
 To get to a conclusion, we looked at the tn_movie_budgets dataset and narrowed our analysis to films releases from 2010 to 2019, in line with the analysis done in question one. The key question was whether there was a relationship between the movie's production budget and its gross earnings.<br>
 
@@ -150,15 +146,14 @@ The conclusion is that is we have a lot of money to invest, we can choose a sci-
 With a small budget, we can choose a horror film and get a large ROI.<br> 
 
 ***
-![Relationship Between Production Budget & Domestic Gross](analysis_images/rel_between_pdn_budget_and_domestic_gross.png)<br />
-![Relationship Between Production Budget & Worldwide Gross](analysis_images/pdn_budget_and_worldwide_gross.png)<br />
+![Relationship Between Production Budget & Domestic Gross](analysis_images/rel_between_pdn_budget_and_domestic_gross.png)<br /> <br />
+![Relationship Between Production Budget & Worldwide Gross](analysis_images/pdn_budget_and_worldwide_gross.png)<br /> <br />
 ![Films With Highest ROIs](analysis_images/films_with_highest_ROIs.png)<br /><br/> <br/>
 ***
-
-
+***
 # Recommendation 3
 
-**Films should be released in July, November, August, and February**
+#### **Films should be released in July, November, August, and February**
 
 To answer this question, the tn_movie_budgets database provided movie release dates and gross worldwide and domestic earnings. Looking at the domestic gross by month over 10 years (2010 - 2019), we can find the months with the highest domestic gross. Using these ten years gives data with ten occurences for each month.<br>
 
@@ -193,11 +188,12 @@ The five highest grossing months based on worldwide returns are:<br>
 Based on these findings, the common months are July, November, August, and February. This is also evidenced from the bar and strip plots where the figures for these months are larger than the rest.<br>
 
 ***
-![Month Worldwide Gross](analysis_images/month_worldwide_gross.png)<br />
-![Month Domestic Gross](analysis_images/month_domestic_gross.png)<br />
-![Month Worldwide Gross](analysis_images/month_worldwide_gross2.png)<br />
-![Month Domestic Gross](analysis_images/month_worldwide_gross.png)<br />
+![Month Worldwide Gross](analysis_images/month_worldwide_gross.png)<br /> <br />
+![Month Domestic Gross](analysis_images/month_domestic_gross.png)<br /> <br />
+![Month Worldwide Gross](analysis_images/month_worldwide_gross2.png)<br /> <br />
+![Month Domestic Gross](analysis_images/month_worldwide_gross.png)<br /> <br /><br />
 
+***
 ***
 # Conclusion
 In conclusion, I discovered that the best films to create should reflect the following recommendations:<br>
@@ -211,10 +207,22 @@ In conclusion, I discovered that the best films to create should reflect the fol
 - The ratings should not be a major influencer of our decisions because each genre seems to receive a similar range of ratings. 
 
 - We should plan on releasing our films in July, November, August, and February, to capture the highest gross earnings. 
-
+***
+***
 # Future Work
 
 If I had time to explore further, I would investigate the following:
     
   - Calculate a more accurate ROI model based on all costs (i.e. marketing budget, distribution costs, etc)
-
+***
+***
+# Repository Structure
+```
+├── README.md                        <- The top-level README for reviewers of this project
+├── index.ipynb   <- Narrative documentation of analysis in Jupyter notebook
+├── movie_analysis_slides.pdf        <- PDF version of project presentation
+├── movie_notebook.pdf               <- PDF version of Jupyter notebook
+├── data                             <- Sourced from The Box Office Mojo, The Numbers, and IMDB
+└── analysis_images                           <- Both sourced externally and generated from code
+```
+***
