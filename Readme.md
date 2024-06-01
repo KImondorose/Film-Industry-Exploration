@@ -115,16 +115,14 @@ It can also be concluded that benchmarking these five studios (Buena Vista, Univ
 ![Highest Grossing Studios](analysis_images/highest_grossing_studios.png)<br />
 ![BV's Highest Grossing Films](analysis_images/BV_highest_grossing_films.png)<br />
 ![Uni's Highest Grossing Films](analysis_images/Uni_highest_grossing_films.png)<br />
-![WB's Highest Grossing Films](analysis_images/WB_highest_grossing_films.png.png)<br />
-![Fox's Highest Grossing Films](analysis_images/Fox_highest_grossing_films.png.png)<br />
-![Sony's Highest Grossing Films](analysis_images/Somy_highest_grossing_films.png.png)<br /> <br /> <br />
+![WB's Highest Grossing Films](analysis_images/WB_highest_grossing_films.png)<br />
+![Fox's Highest Grossing Films](analysis_images/Fox_highest_grossing_films.png)<br />
+![Sony's Highest Grossing Films](analysis_images/Somy_highest_grossing_films.png)<br /> <br /> <br />
 
 ***
 
 
 # Recommendation 2: 
-
-
 
 **With a large production budget, the sci-fi/fantasy/superhero franchises will make the most money**
 **With a small production budget, the horror movie genre is still guaranteed to give a huge ROI**
@@ -157,43 +155,16 @@ With a small budget, we can choose a horror film and get a large ROI.<br>
 ![Films With Highest ROIs](analysis_images/films_with_highest_ROIs.png)<br /><br/> <br/>
 ***
 
-# Question 3
 
-## Which film genres have the highest ratings?
+# Recommendation 3
 
-**Scope & Data Used**
+**Films should be released in July, November, August, and February**
 
-To discover which types of films receive the highest ratings, we can look at the average ratings per genre. This question was answered using the imdb.title.basics and imdb.title.ratings databases. 
+To answer this question, the tn_movie_budgets database provided movie release dates and gross worldwide and domestic earnings. Looking at the domestic gross by month over 10 years (2010 - 2019), we can find the months with the highest domestic gross. Using these ten years gives data with ten occurences for each month.<br>
 
-**Findings**
+The median was used as an indicator to rule out outliers.<br>
 
-Upon joining these two tables, we can see a large variety of films ranging from 2010 to 2019, which is the same range we have looked at for the last 2 questions. I decided to limit the data set to include only the ratings from movies with 50,000 votes or more, since the average rating is highly skewed for movies with less votes (i.e. a movie with 5 votes of all 9.0 ratings and up, will give a very high average rating based off little data). 
-
-Once we separate the movie genres into single-genre categories, we can look at the medians and distributions of average ratings for each movie genre. This information tells us which movie genres generally receive higher ratings, and when looking at the violin plot, "Average Ratings Per Genre", we can also see the distribution of each genre's average rating. 
-
-The movie genre with the highest median for "average rating" (the column name is average rating) is "Documentary", with a median rating of 8.10. Second highest is "Biography", with a median "average rating" of 7.45. And tied for second highest is "War", with a median "average rating" of 7.45. However, there is not much variation between each median "average rating", as all of the medians fall between 6.30 and 8.10. Therefore, even though "Documentary", "Biography" and "War" movies are the highest rated movies, their ratings are not much higher than "Animation", for example, with a median "average rating" of 7.20.
-
-What the violin plot, "Average Ratings Per Genre", does tell us, is the following:
-
-* the long tails on violins indicate outliers in their ratings (e.g. Documentary, Biography, Music)
-* the taller violins indicate genres with more varied ratings (e.g. War, Western, Sci-Fi)
-* the wider violins indicate a higher probability that the rating will be in that range (e.g. History, Animation)
-
-**Recommendations**
-
-Based on these findings, I would recommend making films with less varied ratings if we are looking to make crowd-pleasing films. 
-
-Documentaries seem to be extremely varied, so we should avoid making those films, whereas Animated films seem to be well-liked with less variation in ratings. 
-
-# Question 4
-
-**Scope & Data Used**
-
-To answer this question, the tn.movie_budgets database was helpful in providing movie release dates, as well as gross domestic earnings. We used domestic gross over worldwide gross since holidays vary from country to country. With this database, I included movies from 2010-2020, which gives us data from 10 occurrences of each month.
-
-**Findings**
-
-When we look at the domestic gross by month over the past 10 years, we can find which months have the highest domestic gross. We can use the median domestic gross per month as a good indicator to rule out outliers. Thus, the highest grossing months are:
+The five highest grossing months based on domestic returns are:<br>
 
 * July - $31,206,263
 
@@ -205,38 +176,45 @@ When we look at the domestic gross by month over the past 10 years, we can find 
 
 * February - $19,452,138
 
-Whether or not you release the movie directly on a holiday (i.e. Thanksgiving Day) does not really affect it's gross. In the plot, "Movie Releases by Month", we can see lots of green dots in December, indicating that the movie was released on a holiday, yet December had the lowest median domestic gross earnings. 
+The five highest grossing months based on worldwide returns are:<br>
 
-**Recommendations**
+* November - $60,217,171
 
-Based on these findings, I would recommend releasing our films over the summer, or November. February also seems to be a great time for releases. 
+* July - $57,273,049
 
-I would also recommend NOT releasing a film in December, because it had the lowest domestic gross by month. This could be due to the fact that many other studios release films during this time, or because people are generally busy with family, travel, etc over this time, but it would take more research and data to understand why this happens.
+* February- $43,528,634
 
+* January - $43,061,376
+
+* August - $40,650,842
+
+**RECOMMENDATIONS**
+
+Based on these findings, the common months are July, November, August, and February. This is also evidenced from the bar and strip plots where the figures for these months are larger than the rest.<br>
+
+***
+![Month Worldwide Gross](analysis_images/month_worldwide_gross.png)<br />
+![Month Domestic Gross](analysis_images/month_domestic_gross.png)<br />
+![Month Worldwide Gross](analysis_images/month_worldwide_gross2.png)<br />
+![Month Domestic Gross](analysis_images/month_worldwide_gross.png)<br />
+
+***
 # Conclusion
-
-In conclusion, I discovered that the best films to create should reflect the following recommendations:
+In conclusion, I discovered that the best films to create should reflect the following recommendations:<br>
 
 - If we want to start with a small budget, we should focus on horror films, which produce the highest returns.
 
 - If we want to jump into the industry with a large budget, we should either:
-    * Invest in licensing rights to a sci-fi/fantasy/superhero franchise and create films based on that
-    * Invest in an animation studio and create animated family films, which will also likely garner positive reviews. 
+    * Create movies in a sci-fi/fantasy/superhero franchise.
+    * Create animated films, which will also likely garner positive reviews. 
     
-- We shouldn't worry too much about the ratings because each genre seems to receive a similar range of ratings. However, if we are aiming to please, it might be a good idea to avoid documentaries, on which people have more extreme opinions.
+- The ratings should not be a major influencer of our decisions because each genre seems to receive a similar range of ratings. 
 
-- We should plan on releasing our films in the summer, specifically July or August, or in November, in order capture the highest gross earnings. 
-
-Following these recommendations should lead us on a path for a high probability of success. 
+- We should plan on releasing our films in July, November, August, and February, to capture the highest gross earnings. 
 
 # Future Work
 
 If I had time to explore further, I would investigate the following:
-  
-  - Build a predictive model for movie trends
     
   - Calculate a more accurate ROI model based on all costs (i.e. marketing budget, distribution costs, etc)
-    
-  - Dig deeper into film ratings, pulling the Rotten Tomatoes data as well
-    
-  - Figure out which genres to release during each month -- Is there a seasonality to certain genres' release dates?
+
