@@ -111,7 +111,7 @@ Investing in the scifi/fantasy and superhero franchises seems to be a good idea 
 
 It can also be concluded that benchmarking these five studios (Buena Vista, Universal, Warner Bros, Fox, and Sony) will be an excellent idea for identifying their best practices to emulate them<br>
 
-![example](Highest Grossing Studios.png)<br />
+![example](analysis_images/Highest Grossing Studios.png)<br />
 
 # Recommendation 2: 
 
