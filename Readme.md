@@ -19,6 +19,7 @@
 
 * [Slideshow Presentation](https://github.com/tiaplagata/dsc-phase-1-project-online/blob/master/Microsoft_Movie_Studios.pdf)
 * [Jupyter Notebook with Cleaning & Questions](https://github.com/KImondorose/dsc-phase-1-project/blob/main/index.ipynb)
+* [Contact] For any additional questions, please contact **Rose Kimondo** at rosewairimu1@gmail.com.
 ***
 # Project Overview
 
