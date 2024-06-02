@@ -20,6 +20,8 @@
 * [Slideshow Presentation](https://github.com/KImondorose/dsc-phase-1-project/blob/main/presentation.pdf)
 * [Jupyter Notebook with Cleaning & Questions](https://github.com/KImondorose/dsc-phase-1-project/blob/main/index.ipynb)
 * [Notebook PDF](https://github.com/KImondorose/dsc-phase-1-project/blob/main/notebook.pdf)
+* [Data Sources](https://github.com/KImondorose/dsc-phase-1-project/blob/main/data)
+* [Analysis Images](https://github.com/KImondorose/dsc-phase-1-project/blob/main/analysis_images)
 ***
 # Project Overview
 
