@@ -17,7 +17,7 @@
 ***
 # Important Links
 
-* [Slideshow Presentation]()
+* [Slideshow Presentation](https://github.com/KImondorose/dsc-phase-1-project/blob/main/movie_analysis_slides.pdf)
 * [Jupyter Notebook with Cleaning & Questions](https://github.com/KImondorose/dsc-phase-1-project/blob/main/index.ipynb)
 ***
 # Project Overview
