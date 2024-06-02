@@ -17,7 +17,7 @@
 ***
 # Important Links
 
-* [Slideshow Presentation](https://github.com/tiaplagata/dsc-phase-1-project-online/blob/master/Microsoft_Movie_Studios.pdf)
+* [Slideshow Presentation]()
 * [Jupyter Notebook with Cleaning & Questions](https://github.com/KImondorose/dsc-phase-1-project/blob/main/index.ipynb)
 ***
 # Project Overview
@@ -98,7 +98,9 @@ We can easily see a pattern in the qualities and genres of these films. Most of 
 
 They are superhero films (e.g. Avengers, Deadpool, The Dark Knight, etc), sci-fi/fantasy franchises (e.g. Star Wars, Jurassic World, Harry Potter, Dawn of the Planet of the Apes, etc), and animated films for kids & families (e.g. Incredibles, Despicable Me, etc).<br>
 
-From the IMDB data analysis, these genres also had high ratings based on the median value, and this affirms the recommendation that they are great genres to focus on.
+From the IMDB data analysis, these genres also had high ratings based on the median value, and this affirms the recommendation that they are great genres to focus on.<br>
+
+Please note that since I could not upload the IMBD file to github since it is too large, it is in the gitignore folder.
 
 
 **RECOMMENDATIONS**
