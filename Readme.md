@@ -19,6 +19,7 @@
 
 * [Slideshow Presentation](https://github.com/KImondorose/dsc-phase-1-project/blob/main/presentation.pdf)
 * [Jupyter Notebook with Cleaning & Questions](https://github.com/KImondorose/dsc-phase-1-project/blob/main/index.ipynb)
+* [Notebook PDF](https://github.com/KImondorose/dsc-phase-1-project/blob/main/notebook.pdf)
 ***
 # Project Overview
 
@@ -222,8 +223,8 @@ If I had time to explore further, I would investigate the following:
 ```
 ├── README.md                        <- The top-level README for reviewers of this project
 ├── index.ipynb                      <- Narrative documentation of analysis in Jupyter notebook
-├── presentation.pdf        <- PDF version of project presentation
-├── movie_notebook.pdf               <- PDF version of Jupyter notebook
+├── presentation.pdf                 <- PDF version of project presentation
+├── notebook.pdf                     <- PDF version of Jupyter notebook
 ├── data                             <- Sourced from The Box Office Mojo, The Numbers, and IMDB
 ├── .gitignore                       <- Large IMDB database file ignored 
 ├── images                           <- Images used in the code
